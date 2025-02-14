@@ -21,6 +21,7 @@ Referencia a issue si aplica: #NúmeroDeIssue.
 - **test ( )**: Añadir o modificar pruebas.
 - **chore ( )**: Cambios en la configuración o herramientas del proyecto.
 - **perf ( )**: Mejoras de rendimiento.
+- **test ( )**: Nuevo test
 
 ✅ **Ejemplo de commit correcto:**
 ```bash

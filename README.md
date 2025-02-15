@@ -18,10 +18,10 @@ Referencia a issue si aplica: #NúmeroDeIssue.
 - **docs ( )**: Cambios en la documentación.
 - **style ( )**: Cambios en el formato, sin afectar el código (espacios, comas, etc.).
 - **refactor ( )**: Mejora del código sin cambiar su funcionalidad.
-- **test ( )**: Añadir o modificar pruebas.
+- **Test ( )**: Añadir o modificar pruebas.
 - **chore ( )**: Cambios en la configuración o herramientas del proyecto.
 - **perf ( )**: Mejoras de rendimiento.
-- **test ( )**: Nuevo test
+- **test ( )**: Nuevo test unitario
 
 ✅ **Ejemplo de commit correcto:**
 ```bash

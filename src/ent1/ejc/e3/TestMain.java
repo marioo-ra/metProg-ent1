@@ -16,8 +16,8 @@ public class TestMain {
         System.out.println("x is: " + p4.getX());
         System.out.println("y is: " + p4.getY());
         System.out.println("z is: " + p4.getZ());
-        System.out.println(p3.getXY()[3]);                     // ERROR
-        System.out.println("point is: " + p4.getXYZ()[3]);     // ERROR
+        System.out.println("point y is: " + p3.getXY()[1]);
+        System.out.println("point z is: " + p4.getXYZ()[2]);
         p4.setXYZ(2,3,2);
         System.out.println(p3);
     }

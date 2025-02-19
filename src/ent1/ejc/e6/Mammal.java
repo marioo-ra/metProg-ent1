@@ -7,7 +7,6 @@ public class Mammal extends Animal{
         // Constructor
     public Mammal(String name){
         super(name);
-        this.name = name;
     }
 
         // Otros

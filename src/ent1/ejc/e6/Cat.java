@@ -8,7 +8,6 @@ public class Cat extends Mammal{
         // Constructor
     public Cat(String name){
         super(name);
-        this.name = name;
     }
 
         // Otros

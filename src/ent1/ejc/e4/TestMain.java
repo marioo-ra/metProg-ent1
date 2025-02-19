@@ -21,8 +21,8 @@ public class TestMain {
         mp1.setY(5);
         mp1.setXSpeed(2);
         mp1.setYSpeed(2);
-        System.out.println(mp1.getXY()[1]);             // ERROR
-        System.out.println(mp1.getSpeed()[2]);          // ERROR
+        System.out.println(mp1.getXY()[1]);
+        System.out.println(mp1.getSpeed()[2]);
 
     }
 }

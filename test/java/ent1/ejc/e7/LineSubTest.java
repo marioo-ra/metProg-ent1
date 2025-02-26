@@ -18,23 +18,84 @@ class LineSubTest {
 
     @Test
     void testGetBegin() {
-        assertNotNull(line.getBegin());
-        assertEquals(1, line.getBegin().getX());
-        assertEquals(2, line.getBegin().getY());
+        assertEquals(begin, line.getBegin());
     }
 
     @Test
     void testGetEnd() {
-        assertNotNull(line.getEnd());
-        assertEquals(4, line.getEnd().getX());
-        assertEquals(6, line.getEnd().getY());
+        assertEquals(end, line.getEnd());
+    }
+
+    @Test
+    void testGetBeginX() {
+        assertEquals(1, line.getBeginX());
+    }
+
+    @Test
+    void testGetBeginY() {
+        assertEquals(2, line.getBeginY());
+    }
+
+    @Test
+    void testGetEndX() {
+        assertEquals(4, line.getEndX());
+    }
+
+    @Test
+    void testGetEndY() {
+        assertEquals(6, line.getEndY());
+    }
+
+    @Test
+    void testSetBegin() {
+        line.setBegin(3, 5);
+        assertEquals(3, line.getBeginX());
+        assertEquals(5, line.getBeginY());
+    }
+
+    @Test
+    void testSetEnd() {
+        line.setEnd(7, 8);
+        assertEquals(7, line.getEndX());
+        assertEquals(8, line.getEndY());
+    }
+
+    @Test
+    void testSetBeginX() {
+        line.setBeginX(9);
+        assertEquals(9, line.getBeginX());
+    }
+
+    @Test
+    void testSetBeginY() {
+        line.setBeginY(10);
+        assertEquals(10, line.getBeginY());
+    }
+
+    @Test
+    void testSetBeginXY() {
+        line.setBeginXY(11, 12);
+        assertEquals(11, line.getBeginX());
+        assertEquals(12, line.getBeginY());
+    }
+
+    @Test
+    void testSetEndX() {
+        line.setEndX(13);
+        assertEquals(13, line.getEndX());
+    }
+
+    @Test
+    void testSetEndY() {
+        line.setEndY(14);
+        assertEquals(14, line.getEndY());
     }
 
     @Test
     void testSetEndXY() {
-        line.setEndXY(7, 8);
-        assertEquals(7, line.getEnd().getX());
-        assertEquals(8, line.getEnd().getY());
+        line.setEndXY(15, 16);
+        assertEquals(15, line.getEndX());
+        assertEquals(16, line.getEndY());
     }
 
     @Test
@@ -49,3 +110,4 @@ class LineSubTest {
         assertEquals(expectedGradient, line.getGradient(), 0.0001);
     }
 }
+

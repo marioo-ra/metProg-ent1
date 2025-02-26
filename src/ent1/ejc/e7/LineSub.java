@@ -1,47 +1,36 @@
 package ent1.ejc.e7;
 
-public class LineSub extends Point{
-    // ZONA DE ATRIBUTOS
-    Point end;
+public class LineSub {
+    // Atributos
+    private Point begin;
+    private Point end;
 
-
-    // ZONA DE METODOS
-        // Constructor
-    public LineSub (int beginX, int beginY, int endX, int endY) {
-        super(beginX, beginY);
+    // Constructores
+    public LineSub(int beginX, int beginY, int endX, int endY) {
+        this.begin = new Point(beginX, beginY);
         this.end = new Point(endX, endY);
     }
 
-    public LineSub (Point begin, Point end) {
-        super(begin.getX(), begin.getY());
+    public LineSub(Point begin, Point end) {
+        this.begin = begin;
         this.end = end;
     }
 
-        // Getter's y setter's
+    // Métodos Getter
     public Point getBegin() {
-        Point p = new Point(getBeginX(), getBeginY());
-        return p;
-    }
-
-    public void setBegin(int x, int y){
-
+        return begin;
     }
 
     public Point getEnd() {
-        Point p = new Point(getEndX(), getEndY());
-        return p;
-    }
-
-    public void setEnd(int x, int y){
-
+        return end;
     }
 
     public int getBeginX() {
-        return getBegin().getX();
+        return begin.getX();
     }
 
     public int getBeginY() {
-        return getBegin().getY();
+        return begin.getY();
     }
 
     public int getEndX() {
@@ -52,41 +41,49 @@ public class LineSub extends Point{
         return end.getY();
     }
 
+    // Métodos Setter
+    public void setBegin(int x, int y) {
+        this.begin.setXY(x, y);
+    }
+
+    public void setEnd(int x, int y) {
+        this.end.setXY(x, y);
+    }
+
     public void setBeginX(int x) {
-        getBegin().setX(x);
+        this.begin.setX(x);
     }
 
     public void setBeginY(int y) {
-        getBegin().setY(y);
+        this.begin.setY(y);
     }
 
     public void setBeginXY(int x, int y) {
-        getBegin().setXY(x,y);
+        this.begin.setXY(x, y);
     }
 
     public void setEndX(int x) {
-        end.setX(x);
+        this.end.setX(x);
     }
 
     public void setEndY(int y) {
-        end.setY(y);
+        this.end.setY(y);
     }
 
     public void setEndXY(int x, int y) {
-        end.setXY(x,y);
+        this.end.setXY(x, y);
     }
 
+    // Método para calcular la longitud de la línea
     public double getLength() {
-        double xDiff = end.getX() - getBeginX();
-        double yDiff = end.getY() - getBeginY();
+        double xDiff = end.getX() - begin.getX();
+        double yDiff = end.getY() - begin.getY();
         return Math.sqrt(xDiff * xDiff + yDiff * yDiff);
     }
 
+    // Método para calcular el gradiente (pendiente)
     public double getGradient() {
-        int xInicio = getBegin().getX();
-        int yInicio = getBegin().getY();
-        int xFin = end.getX();
-        int yFin = end.getY();
-        return Math.atan2(yFin-yInicio, xFin-xInicio);
+        return Math.atan2(end.getY() - begin.getY(), end.getX() - begin.getX());
     }
 }
+

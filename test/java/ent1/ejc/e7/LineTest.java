@@ -7,8 +7,8 @@ public class LineTest {
 
     @Test
     public void testLineConstructorWithPoints() {
-        Point begin = new Point(1, 2);
-        Point end = new Point(3, 4);
+        Point1 begin = new Point1(1, 2);
+        Point1 end = new Point1(3, 4);
         Line line = new Line(begin, end);
         assertEquals(begin, line.getBegin());
         assertEquals(end, line.getEnd());
@@ -26,7 +26,7 @@ public class LineTest {
     @Test
     public void testSetBegin() {
         Line line = new Line(1, 2, 3, 4);
-        Point newBegin = new Point(5, 6);
+        Point1 newBegin = new Point1(5, 6);
         line.setBegin(newBegin);
         assertEquals(newBegin, line.getBegin());
     }
@@ -34,7 +34,7 @@ public class LineTest {
     @Test
     public void testSetEnd() {
         Line line = new Line(1, 2, 3, 4);
-        Point newEnd = new Point(7, 8);
+        Point1 newEnd = new Point1(7, 8);
         line.setEnd(newEnd);
         assertEquals(newEnd, line.getEnd());
     }

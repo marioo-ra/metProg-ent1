@@ -2,37 +2,37 @@ package ent1.ejc.e7;
 
 public class Line {
     // ZONA DE ATRIBUTOS
-    private Point begin;
+    private Point1 begin;
 
-    private Point end;
+    private Point1 end;
 
 
     // ZONA DE METODOS
         // Constructor
-    public Line (Point begin, Point end) { // caller to construct the Points
+    public Line (Point1 begin, Point1 end) { // caller to construct the Points
         this.begin = begin;
         this.end = end;
     }
 
     public Line (int beginX, int beginY, int endX, int endY) {
-        begin = new Point(beginX, beginY);
-        end = new Point(endX, endY);
+        begin = new Point1(beginX, beginY);
+        end = new Point1(endX, endY);
     }
 
         // Getter's y setter's
-    public Point getBegin() {
+    public Point1 getBegin() {
         return begin;
     }
 
-    public void setBegin(Point begin) {
+    public void setBegin(Point1 begin) {
         this.begin = begin;
     }
 
-    public Point getEnd() {
+    public Point1 getEnd() {
         return end;
     }
 
-    public void setEnd(Point end) {
+    public void setEnd(Point1 end) {
         this.end = end;
     }
 
@@ -53,27 +53,27 @@ public class Line {
     }
 
     public void setBeginX(int x) {
-        this.begin = new Point(x, getBeginY());
+        this.begin = new Point1(x, getBeginY());
     }
 
     public void setBeginY(int y) {
-        this.begin = new Point(getBeginX(), y);
+        this.begin = new Point1(getBeginX(), y);
     }
 
     public void setBeginXY(int x, int y) {
-        this.begin = new Point(x, y);
+        this.begin = new Point1(x, y);
     }
 
     public void setEndX(int x) {
-        this.end = new Point(x, getBeginY());
+        this.end = new Point1(x, getBeginY());
     }
 
     public void setEndY(int y) {
-        this.end = new Point(getBeginX(), y);
+        this.end = new Point1(getBeginX(), y);
     }
 
     public void setEndXY(int x, int y) {
-        this.end = new Point(x,y);
+        this.end = new Point1(x,y);
     }
 
     public double getLength() {

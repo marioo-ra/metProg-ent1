@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 class LineSubTest {
     private LineSub line;
-    private Point begin;
-    private Point end;
+    private Point1 begin;
+    private Point1 end;
 
     @BeforeEach
     void setUp() {
-        begin = new Point(1, 2);
-        end = new Point(4, 6);
+        begin = new Point1(1, 2);
+        end = new Point1(4, 6);
         line = new LineSub(begin, end);
     }
 

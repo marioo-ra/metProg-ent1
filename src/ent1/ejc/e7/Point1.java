@@ -1,6 +1,6 @@
 package ent1.ejc.e7;
 
-public class Point {
+public class Point1 {
     // ZONA DE ATIBUTOS
     private int x;
     private int y;
@@ -8,7 +8,7 @@ public class Point {
 
     // ZONA DE METODOS
         // Constructor
-    public Point (int x, int y) {
+    public Point1(int x, int y) {
         this.x = x;
         this.y = y;
     }

@@ -2,26 +2,26 @@ package ent1.ejc.e7;
 
 public class LineSub {
     // Atributos
-    private Point begin;
-    private Point end;
+    private Point1 begin;
+    private Point1 end;
 
     // Constructores
     public LineSub(int beginX, int beginY, int endX, int endY) {
-        this.begin = new Point(beginX, beginY);
-        this.end = new Point(endX, endY);
+        this.begin = new Point1(beginX, beginY);
+        this.end = new Point1(endX, endY);
     }
 
-    public LineSub(Point begin, Point end) {
+    public LineSub(Point1 begin, Point1 end) {
         this.begin = begin;
         this.end = end;
     }
 
     // Métodos Getter
-    public Point getBegin() {
+    public Point1 getBegin() {
         return begin;
     }
 
-    public Point getEnd() {
+    public Point1 getEnd() {
         return end;
     }
 

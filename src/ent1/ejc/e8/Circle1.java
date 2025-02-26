@@ -1,6 +1,6 @@
 package ent1.ejc.e8;
 
-public class Circle {
+public class Circle1 {
     // ZONA DE ATRIBUTOS
     double radius;
     String color;
@@ -8,12 +8,12 @@ public class Circle {
 
     // ZONA DE METODOS
         // Constructor
-    public Circle(double radius, String color){
+    public Circle1(double radius, String color){
         this.radius = radius;
         this.color = color;
     }
 
-    public Circle (){
+    public Circle1(){
         this.radius = 2.0d;
         this.color = "red";
     }
@@ -36,11 +36,11 @@ public class Circle {
     }
 
         // Otros
-    double getArea(){
+    public double getArea(){
         return Math.PI * radius * radius;
     }
 
-    double getPerimeter(){
+    public double getPerimeter(){
         return 2 * Math.PI * radius;
     }
 

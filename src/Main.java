@@ -1,29 +1,12 @@
 
-import ent1.eja.e2.Circle;
-import ent1.ejc.e1.Cylinder;
-import ent1.ejc.e3.Point2D;
-import ent1.ejc.e3.Point3D;
-import ent1.ejc.e4.MovablePoint;
-import ent1.ejc.e4.Point;
-import ent1.ejc.e5.Rectangle;
-import ent1.ejc.e5.Shape;
-import ent1.ejc.e5.Square;
-import ent1.ejc.e6.Animal;
-import ent1.ejc.e6.Cat;
-import ent1.ejc.e6.Dog;
-import ent1.ejc.e6.Mammal;
-import ent1.ejc.e7.Line;
-import ent1.ejc.e7.Point1;
-import ent1.ejc.e8.Circle1;
-import ent1.ejc.e8.Cylinder1;
 
 class Main {
     public static void main(String[] args){
-        ent1_eja_e2();
+        ent1_eja_e1();
     }
     static public void ent1_eja_e1(){
 // se crea un cilindro con color, radio y altura por defecto
-        Cylinder c1 = new Cylinder();
+        ent1.ejc.e1.Cylinder c1 = new ent1.ejc.e1.Cylinder();
 // muestras por pantalla la información del cilindro, incluido el área de su base y el volumen del cilindro
         System.out.println("Cylinder:"
                 + " radius=" + c1.getRadius()
@@ -32,7 +15,7 @@ class Main {
                 + " volume=" + c1.getVolume());
 
 // crea un nuevo cilindro de radio 10, color y altura por defecto
-        Cylinder c2 = new Cylinder(10.0);
+        ent1.ejc.e1.Cylinder c2 = new ent1.ejc.e1.Cylinder(10.0);
 // muestras por pantalla la información del cilindro, incluido el área de su base y el volumen del cilindro
         System.out.println("Cylinder:"
                 + " radius=" + c2.getRadius()
@@ -40,7 +23,7 @@ class Main {
                 + " base area=" + c2.getArea()
                 + " volume=" + c2.getVolume());
 // crea un nuevo cilindro de altura 10, radio 2 y color por defecto
-        Cylinder c3 = new Cylinder(2.0, 10.0);
+        ent1.ejc.e1.Cylinder c3 = new ent1.ejc.e1.Cylinder(2.0, 10.0);
 // muestras por pantalla la información del cilindro, incluido el área de su base y el volumen del cilindro
         System.out.println("Cylinder:"
                 + " radius=" + c3.getRadius()
@@ -50,42 +33,22 @@ class Main {
 // muestra por pantalla que forma tiene la base, el radio, color y altura del cilindro
         System.out.println(c3);
     }
-    static public void ent1_eja_e2(){
-// creas un nuevo círculo de radio 1.1
-        Circle c1 = new Circle(1.1);
-// muestras por pantalla la información del círculo
-        System.out.println(c1);
-// creas un nuevo círculo de radio por defecto
-        Circle c2 = new Circle();
-// muestras por pantalla la información del nuevo círculo
-        System.out.println(c2);
 
-// le das un nuevo valor al radio del primer círculo
-        c1.setRadius(2.2);
-// muestras por pantalla la información del círculo con el nuevo radio
-        System.out.println(c1);
-// muestras por pantalla el radio
-        System.out.println("radius is: " + c1.getRadius());
-
-// obtienes el área y la circunferencia y lo muestras por pantalla
-        System.out.printf("area is: %.2f%n", c1.getArea());
-        System.out.printf("circumference is: %.2f%n", c1.getCircumference());
-    }
     static public void ent1_eja_e3(){
 // crea un punto en 2 dimensiones con valores de "x" e "y" por defecto
-        Point2D p1 = new Point2D();
+        ent1.ejc.e3.Point2D p1 = new ent1.ejc.e3.Point2D();
 // muestra por pantalla la información del punto
         System.out.println(p1);
 // crea un punto en 2 dimensiones con x=5 e y=5
-        Point2D p2 = new Point2D(5f,5f);
+        ent1.ejc.e3.Point2D p2 = new ent1.ejc.e3.Point2D(5f,5f);
 // muestra por pantalla la información del punto
         System.out.println(p2);
 // crea un punto en 3 dimensiones con valores de "x", "y", "z" por defecto
-        Point3D p3 = new Point3D();
+        ent1.ejc.e3.Point3D p3 = new ent1.ejc.e3.Point3D();
 // muestra por pantalla la información del punto
         System.out.println(p3);
 // crea un punto en 3 dimensiones con x=1, y=1, z=1
-        Point3D p4 = new Point3D(1f,1f,1f);
+        ent1.ejc.e3.Point3D p4 = new ent1.ejc.e3.Point3D(1f,1f,1f);
 // muestra por pantalla la información del punto
         System.out.println(p4);
 
@@ -103,23 +66,23 @@ class Main {
     }
     static public void ent1_eja_e4(){
 // creas un nuevo punto de coordenadas x e y por defecto
-        Point p1 = new Point();
+        ent1.ejc.e4.Point p1 = new ent1.ejc.e4.Point();
 // muestras por pantalla la información del punto
         System.out.println(p1);
 // creas un nuevo punto de coordenadas x=2 e y=2
-        Point p2 = new Point(2f,2f);
+        ent1.ejc.e4.Point p2 = new ent1.ejc.e4.Point(2f,2f);
 // muestras por pantalla la información del punto
         System.out.println(p2);
 // creas un nuevo punto capaz de moverse de coordenadas x e y por defecto, con velocidades en el eje x e y por defecto también
-        MovablePoint mp1 = new MovablePoint();
+        ent1.ejc.e4.MovablePoint mp1 = new ent1.ejc.e4.MovablePoint();
 // muestras por pantalla la información del punto
         System.out.println(mp1);
 // creas un nuevo punto capaz de moverse de coordenadas x e y por defecto, cuya velocidad en el eje "x" es 2 y en el eje "y" es 2 también
-        MovablePoint mp2 = new MovablePoint(2f, 2f);
+        ent1.ejc.e4.MovablePoint mp2 = new ent1.ejc.e4.MovablePoint(2f, 2f);
 // muestras por pantalla la información del punto
         System.out.println(mp2);
 // creas un nuevo punto capaz de moverse de coordenadas x=2 e y=2, cuya velocidad en el eje "x" es 2 y en el eje "y" es 2 también
-        MovablePoint mp3 = new MovablePoint(2f, 2f, 2f, 2f);
+        ent1.ejc.e4.MovablePoint mp3 = new ent1.ejc.e4.MovablePoint(2f, 2f, 2f, 2f);
 // muestras por pantalla la información del punto
         System.out.println(mp3);
 
@@ -139,7 +102,7 @@ class Main {
     }
     static public void ent1_eja_e5(){
 // creas una figura de color azul que no esté rellena
-        Shape shape = new Shape("blue", false);
+        ent1.ejc.e5.Shape shape = new ent1.ejc.e5.Shape("blue", false);
 // muestras por pantalla la información de la figura
         System.out.println(shape);
 // creas un círculo de radio 3
@@ -147,11 +110,11 @@ class Main {
 // muestras por pantalla la información de la figura
         System.out.println(circle);
 // creas un rectángulo de anchura 4 y altura 6
-        Rectangle rectangle = new Rectangle(4,6);
+        ent1.ejc.e5.Rectangle rectangle = new ent1.ejc.e5.Rectangle(4,6);
 // muestras por pantalla la información de la figura
         System.out.println(rectangle);
 // creas un cuadrado de lado 3
-        Square square = new Square(3);
+        ent1.ejc.e5.Square square = new ent1.ejc.e5.Square(3);
 // muestras por pantalla la información de la figura
         System.out.println(square);
 
@@ -173,19 +136,19 @@ class Main {
     }
     static public void ent1_eja_e6(){
 // crea un animal cualquiera y le da el nombre de Jacobo
-        Animal animal = new Animal("Jacobo");
+        ent1.ejc.e6.Animal animal = new ent1.ejc.e6.Animal("Jacobo");
 // muestra por pantalla el nombre del animal
         System.out.println(animal);
 // crea un mamífero y le da el nombre de Pedro
-        Mammal mammal = new Mammal("Pedro");
+        ent1.ejc.e6.Mammal mammal = new ent1.ejc.e6.Mammal("Pedro");
 // muestra por pantalla el nombre del mamífero
         System.out.println(mammal);
 // crea un perro y le da el nombre de Cofee
-        Dog dog = new Dog("Cofee");
+        ent1.ejc.e6.Dog dog = new ent1.ejc.e6.Dog("Cofee");
 // muestra por pantalla el nombre del perro
         System.out.println(dog);
 // crea un gato y le da el nombre de Leia
-        Cat cat = new Cat("Leia");
+        ent1.ejc.e6.Cat cat = new ent1.ejc.e6.Cat("Leia");
 // muestra por pantalla el nombre del gato
         System.out.println(cat);
 
@@ -198,19 +161,19 @@ class Main {
     }
     static public void ent1_eja_e7(){
 // Prueba del constructor de la clase Point
-        Point1 p1 = new Point1(10, 20);
+        ent1.ejc.e7.Point1 p1 = new ent1.ejc.e7.Point1(10, 20);
 // Imprime el punto (10,20)
         System.out.println(p1);
 
 // Prueba del constructor de la clase Line con coordenadas
-        Line l1 = new Line(0, 0, 3, 4);
+        ent1.ejc.e7.Line l1 = new ent1.ejc.e7.Line(0, 0, 3, 4);
 // Imprime la línea con los puntos (0,0) y (3,4)
         System.out.println(l1);
 
 // Prueba del constructor de la clase Line con objetos Point
-        Point1 begin = new Point1(2, 2);
-        Point1 end = new Point1(5, 5);
-        Line l2 = new Line(begin, end);
+        ent1.ejc.e7.Point1 begin = new ent1.ejc.e7.Point1(2, 2);
+        ent1.ejc.e7.Point1 end = new ent1.ejc.e7.Point1(5, 5);
+        ent1.ejc.e7.Line l2 = new ent1.ejc.e7.Line (begin, end);
 // Imprime la línea con los puntos (2,2) y (5,5)
         System.out.println(l2);
 
@@ -222,11 +185,11 @@ class Main {
     }
     static public void ent1_eja_e8(){
 // crea un círculo de radio y color por defecto
-        Circle1 circle = new Circle1();
+        ent1.ejc.e8.Circle1 circle = new ent1.ejc.e8.Circle1();
 // muestras por pantalla la información del círculo
         System.out.println(circle);
 // creas un cilindro cuya base tiene los datos del círculo anterior y le da una altura por defecto
-        Cylinder1 cylinder = new Cylinder1();
+        ent1.ejc.e8.Cylinder1 cylinder = new ent1.ejc.e8.Cylinder1();
 // muestras por pantalla la información del cilindro
         System.out.println(cylinder);
 
